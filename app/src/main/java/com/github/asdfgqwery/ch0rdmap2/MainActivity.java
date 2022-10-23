@@ -11,6 +11,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowInsetsController;
+import android.view.animation.AlphaAnimation;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -62,6 +63,18 @@ public class MainActivity extends AppCompatActivity {
                 try (InputStream istream1 = assets.open(fr)){
                     Bitmap bitmap = BitmapFactory.decodeStream(istream1);
                     fret.setImageBitmap(bitmap);
+
+
+                        // 透明度を0から1に変化
+                        AlphaAnimation alphaFadeIn = new AlphaAnimation(0.0f, 1.0f);
+                        // animation時間 msec
+                        alphaFadeIn.setDuration(1200);
+                        // animationが終わったそのまま表示にする
+                        alphaFadeIn.setFillAfter(true);
+
+                        layer1.startAnimation(alphaFadeIn);
+
+
                 } catch (Exception e){
                     e.printStackTrace();
                 }
@@ -119,6 +132,17 @@ public class MainActivity extends AppCompatActivity {
                 try (InputStream istream2 = assets.open(l1)){
                     Bitmap bitmap = BitmapFactory.decodeStream(istream2);
                     layer1.setImageBitmap(bitmap);
+
+                    // 透明度を0から1に変化
+                    AlphaAnimation alphaFadeIn = new AlphaAnimation(0.0f, 1.0f);
+                    // animation時間 msec
+                    alphaFadeIn.setDuration(1200);
+                    // animationが終わったそのまま表示にする
+                    alphaFadeIn.setFillAfter(true);
+
+                    layer1.startAnimation(alphaFadeIn);
+
+
                 } catch (Exception e){
                     e.printStackTrace();
                 }
