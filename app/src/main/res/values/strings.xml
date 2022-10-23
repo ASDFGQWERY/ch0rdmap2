@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">ch0rdmap2</string>
+
+    <string-array name="spinner1_items">
+        <item name="p01" type="string">C</item>
+        <item name="p02" type="string">Db</item>
+        <item name="p03" type="string">D</item>
+        <item name="p04" type="string">Eb</item>
+        <item name="p05" type="string">E</item>
+        <item name="p06" type="string">F</item>
+        <item name="p07" type="string">F#</item>
+        <item name="p08" type="string">G</item>
+        <item name="p09" type="string">Ab</item>
+        <item name="p10" type="string">A</item>
+        <item name="p11" type="string">Bb</item>
+        <item name="p12" type="string">B</item>
+    </string-array>
+
+    <string-array name="spinner2_items">
+        <item name="pq01" type="string">Maj7</item>
+        <item name="pq02" type="string">m7</item>
+        <item name="pq03" type="string">7</item>
+        <item name="pq04" type="string">m7b5</item>
+    </string-array>
+
+
+    <string name="img_description1">key</string>
+    <string name="img_description2">type</string>
+    <string name="img_description3">fret</string>
+    <string name="img_description4">image4</string>
+
+
+
+
 </resources>
